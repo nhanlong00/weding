@@ -1,0 +1,26 @@
+.introduction {
+    padding: 30px 0;
+    .title {
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+    }
+
+    .heart-icon {
+        font-size: 2rem;
+        margin: 0 1.5rem;
+        color: rgb(177, 69, 69);
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .introduction {
+        .title {
+            font-size: 1.5rem;
+        }
+
+        .title-common {
+            text-align: center;
+            font-size: 0.75rem;
+        }
+    }
+}

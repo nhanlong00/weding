@@ -1,0 +1,127 @@
+.wedding-schedule {
+  background: url("../../../assets/bg.png");
+  padding: 120px 0;
+
+  .invitation-box {
+    background-color: white;
+    height: 500px;
+    padding: 30px;
+
+    .inner-box {
+      border: 5px solid rgb(157 151 151 / 40%);
+
+      .image-banner {
+        height: 410px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .invitation-box.left {
+    position: relative;
+    .left-vec {
+      background: url("../../../assets/invitation-left-img.png") center
+        center/cover no-repeat local;
+      width: 220px;
+      height: 414px;
+      position: absolute;
+      left: -120px;
+      top: -100px;
+    }
+  }
+
+  .invitation-box.right {
+    position: relative;
+    .right-vec {
+      background: url("../../../assets/invitation-right-image.png") center
+        center/cover no-repeat local;
+      width: 400px;
+      height: 508px;
+      position: absolute;
+      right: -100px;
+      bottom: -120px;
+    }
+
+    .box-calendar {
+      margin: 20px;
+
+      .wedding-calendar {
+        .calendar-month {
+          font-size: 1.3rem;
+          text-align: center;
+        }
+
+        p.text-center {
+          display: none;
+        }
+        .react-calendar__navigation {
+          display: none;
+        }
+
+        .react-calendar {
+          width: 100% !important;
+          border: unset;
+          pointer-events: none;
+        }
+
+        .react-calendar__month-view__weekdays {
+          border-bottom: 1px solid #ebebeb;
+        }
+
+        .react-calendar__month-view__weekdays abbr[title] {
+          text-decoration: unset;
+        }
+
+        .react-calendar__month-view__days {
+          padding-top: 20px;
+        }
+
+        .react-calendar__tile abbr[aria-label="February 17, 2024"] {
+          background-color: #a0a0a1;
+          border-radius: 12px;
+          padding: 10px;
+          font-weight: 700;
+          color: white;
+        }
+
+        .react-calendar__tile--now {
+          background-color: unset;
+          color: #333;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .wedding-schedule {
+    .invitation-box.left .left-vec {
+      width: 130px;
+      height: 300px;
+      background-size: contain;
+      left: -29px;
+    }
+
+    .invitation-box.right .right-vec {
+      width: 300px;
+    background-size: contain;
+    height: 300px;
+    position: absolute;
+    right: -2px;
+    bottom: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .show-counter {
+    .countdown {
+      padding: 0 0.75rem 0 0.75rem;
+      z-index: 10;
+      .time {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

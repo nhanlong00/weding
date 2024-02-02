@@ -1,0 +1,88 @@
+.banner-slider {
+  .carousel-inner {
+    height: 600px;
+    .carousel-item img {
+      background-color: #646464;
+      width: 100%;
+      object-fit: cover;
+      height: 600px;
+      opacity: 0.95;
+    }
+
+    .carousel-caption {
+      bottom: 5rem;
+
+      h3 {
+        font-size: 3.5rem;
+        font-family: "Dancing Script", cursive;
+      }
+
+      p {
+        display: none;
+      }
+    }
+
+    .date-schedule {
+      position: absolute;
+      bottom: 2rem;
+      right: 15%;
+      left: 15%;
+      text-align: center;
+      font-size: 2rem;
+      color: #fff;
+      font-weight: 500;
+    }
+  }
+
+  // .custom-carousel-item {
+  //     opacity: 0;
+  //     animation: fadeInOut 1s ease-in-out;
+  //   }
+
+  //   @keyframes fadeInOut {
+  //     0% {
+  //       opacity: 0;
+  //     }
+  //     20% {
+  //       opacity: 0.2;
+  //     }
+  //     50% {
+  //       opacity: 0.5;
+  //     }
+  //     100% {
+  //       opacity: 1;
+  //     }
+  //   }
+
+  //   .custom-carousel-item.carousel-item-left,
+  //   .custom-carousel-item.carousel-item-right,
+  //   .custom-carousel-item.carousel-item-prev,
+  //   .custom-carousel-item.carousel-item-next {
+  //     opacity: 0;
+  //   }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-slider .carousel-inner .carousel-caption {
+    display: block !important;
+
+    h3 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .banner-slider .carousel-inner {
+    .carousel-caption {
+      bottom: 4rem;
+      h3 {
+        font-size: 2.2rem;
+      }
+    }
+
+    .date-schedule {
+      font-size: 1.4rem;
+    }
+  }
+}

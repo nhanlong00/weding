@@ -1,0 +1,40 @@
+.intro_common_secondary {
+  font-size: 28px;
+  padding: 30px 0;
+  position: relative;
+
+  .title {
+    padding: 8px 12px;
+  }
+
+  .v-line {
+    position: absolute;
+    text-align: center;
+    border: 1px solid #ababab;
+    height: 40px;
+    width: 440px;
+  }
+
+  .h-line {
+    position: absolute;
+    text-align: center;
+    border: 1px solid #ababab;
+    height: 60px;
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .intro_common_secondary {
+    font-size: 22px;
+    .v-line {
+      height: 50px;
+      width: 260px;
+    }
+  
+    .h-line {
+      height: 70px;
+      width: 240px;
+    }
+  }
+}

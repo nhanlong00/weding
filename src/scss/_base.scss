@@ -1,0 +1,60 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: $main-color;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.btn-action-secondary {
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: $bg-secondary;
+    color: $color-white;
+}
+
+.btn-action-primary {
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: $bg-main;
+    color: $color-white;
+}
+
+
+.line-bottom {
+    border-bottom: 1px solid #efefef;
+}

@@ -1,0 +1,36 @@
+.wedding-box {
+    margin: 30px 0 30px 0;
+    .donate-card {
+        .item {
+            box-shadow: 0px 4px 11px #cfcfcf;
+            width: 420px;
+            text-align: center;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            
+            .donate-bank, .bank-owner, .bank-account {
+                padding-top: 12px ;
+            }
+            .donate-title {
+                font-weight: 400;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+
+            .qr-code-image {
+                width: 200px;
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wedding-box .donate-card {
+        display:  block !important;
+        .item {
+            width: unset;
+        }
+    }
+}
